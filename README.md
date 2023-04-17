@@ -4,7 +4,7 @@ To create a shortcode for displaying the current year in the copyright notice, y
 
 Open your theme's functions.php file or your child theme's functions.php file.
 
-Add code 
+Add code see shortcode
 
 // Create a shortcode for displaying the current year
 
@@ -12,3 +12,8 @@ In this example, the current_year_shortcode() function returns the current year 
 
 Save your functions.php file.
 Now you can use the [current_year] shortcode in your WordPress posts, pages, and text widgets. If you want to use this shortcode in your theme's PHP files, you can use the do_shortcode() function, like this:
+
+<footer>
+    <p>&copy; <?php echo do_shortcode('[current_year]'); ?> Your Website Name. All rights reserved.</p>
+</footer>
+
